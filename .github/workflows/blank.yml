@@ -5,5 +5,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    -name: Hello step
-    run:  echo "welcome to GHA on all services"
+    run:  echo "welcome to GHA on all service"
     
