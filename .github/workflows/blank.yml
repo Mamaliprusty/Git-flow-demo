@@ -8,5 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello step
-        run: echo "Welcome to GitHub Actions on all services"
+        run: |
+          echo "Welcome to GitHub Actions on all services"
+          echo "This is line 2 command"
+          echo "This is line 3 command"
 
