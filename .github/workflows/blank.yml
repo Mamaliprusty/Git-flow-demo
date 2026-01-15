@@ -1,7 +1,7 @@
 name: Hello World
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -12,20 +12,4 @@ jobs:
           echo "Welcome to GitHub Actions on all services"
           echo "This is line 1 command"
 
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hello test
-        run: |
-          echo "Welcome to GitHub Actions on all test services"
-          echo "This is line 2 command"
-
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hello deploy
-        run: |
-          echo "Welcome to GitHub Actions on all deployment services"
-          echo "This is line 3 command"
+ 
