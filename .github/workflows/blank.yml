@@ -1,9 +1,12 @@
 name: Hello World
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
- hello:
-  runs-on: ubuntu-latest
-  steps:
-   -name: Hello step
-    run:  echo "welcome to GHA on all service"
-    
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "Welcome to GitHub Actions on all services"
+
