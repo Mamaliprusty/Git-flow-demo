@@ -4,12 +4,26 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello step
         run: |
           echo "Welcome to GitHub Actions on all services"
-          echo "This is line 2 command"
-          echo "This is line 3 command"
+          echo "This is line 1 command"
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello test
+        run: |
+          echo "Welcome to GitHub Actions on all test services"
+          echo "This is line 2 command"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello deploy
+        run: |
+          echo "Welcome to GitHub Actions on all deployment services"
+          echo "This is line 3 command"
