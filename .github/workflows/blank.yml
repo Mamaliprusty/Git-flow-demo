@@ -13,6 +13,7 @@ jobs:
           echo "This is line 1 command"
 
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Hello test
@@ -21,6 +22,7 @@ jobs:
           echo "This is line 2 command"
 
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Hello deploy
