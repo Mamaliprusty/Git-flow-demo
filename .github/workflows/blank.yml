@@ -1,15 +1,17 @@
-name: Hello World
+name: Github Action Demo
 
 on:
   push:
 
 jobs:
-  build:
+  Action-demo:
     runs-on: ubuntu-latest
     steps:
       - name: Hello step
-        run: |
-          echo "Hello, ${{ vars.BLANK}}"
+        uses: actions/Checkout@v4
+      - name: Print index.html file
+        run: cat index.html
+          
           
 
  
